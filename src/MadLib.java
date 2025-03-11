@@ -3,6 +3,9 @@ public class MadLib {
     public static void main(String[] args) {
         System.out.println("Hi leif");
         MadLib myStory = new MadLib();
+        randomDiscount();
+        specialOfTheDay("Chocolate");
+        countScoops();
     }
     public MadLib(){
         System.out.println("Hi kat");
@@ -37,6 +40,23 @@ public class MadLib {
 
 //now print story to the dos window
         System.out.println(story);
+    }
+    public static void randomDiscount(){
+        int randomInt;
+        randomInt = (int) (Math.random()*31);
+        System.out.println("u get " + randomInt + " off your purchase");
+    }
+    public static void specialOfTheDay(String flavor){
+        System.out.println("Today's special is " + flavor);
+    }
+
+    public static void countScoops() {
+        for (int x = 1; x<6; x=x+1){
+            System.out.println(x);
+        }
+        for (int y = 2; y<12; y=y+3){
+            System.out.println(y);
+        }
     }
 
 }
